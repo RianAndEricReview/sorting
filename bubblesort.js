@@ -1,5 +1,11 @@
 function bubbleSort(arr) {
-
+  console.log(arr, 'this is the array[]')
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = 0; j < arr.length - i - 1; j++) {
+      check(arr, j);
+    }
+  }
+  return arr;
 }
 
 function check(arr, index) {
@@ -13,4 +19,5 @@ function swap(arr, index) {
   arr[index] = arr[index + 1];
   arr[index + 1] = originalIndexVal;
 }
+
 
