@@ -18,7 +18,7 @@ describe('Bubble Sort', function(){
     expect (window.swap.calls.count()).toEqual(1);
   })
 
-  it('handles an array with a single item', function() {
+  it('handles an array with multiple items', function() {
     let arr = [1, 9, 3, 2, 5, 8, 12];
     expect( bubbleSort(arr) ).toEqual(arr.sort(function(a, b) {
       return a - b
